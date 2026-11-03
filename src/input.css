@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "../*.html";
+
+@theme {
+  --color-brand-purple: #83587f;
+  --color-brand-lime: #c9d863;
+  --color-brand-beige: #fff7f1;
+  --color-brand-surface: #f4e9e2;
+  --color-brand-card: #fffdfb;
+  --color-brand-dark: #332334;
+  --color-brand-text: #352a34;
+  --color-brand-muted: #6c5b69;
+
+  --color-darkTheme-bg: #211824;
+  --color-darkTheme-surface: #302331;
+  --color-darkTheme-card: #3a2c3b;
+  --color-darkTheme-text: #fff7f1;
+  --color-darkTheme-muted: #bda3bc;
+
+  --font-sans: "IBM Plex Sans Arabic", sans-serif;
+
+  --radius-xl-custom: 24px;
+  --radius-2xl-custom: 36px;
+  --radius-3xl-custom: 54px;
+
+  --shadow-soft: 0 10px 30px -5px rgba(131, 88, 127, 0.08);
+  --shadow-hover: 0 20px 40px -10px rgba(131, 88, 127, 0.18);
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
